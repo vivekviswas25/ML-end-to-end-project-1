@@ -1,0 +1,111 @@
+/* home.css */
+
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #acb6e5);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Login Card */
+.login {
+  background-color: #fff;
+  padding: 35px 45px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 550px;
+}
+
+/* Headings */
+.login h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 28px;
+}
+
+.login h2 {
+  text-align: center;
+  color: #4c84ff;
+  font-size: 20px;
+  margin-top: 25px;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #444;
+  display: block;
+}
+
+select,
+input[type='number'],
+input[type='submit'] {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  background-color: #f9f9f9;
+}
+
+select:focus,
+input[type='number']:focus {
+  border-color: #4c84ff;
+  outline: none;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(76, 132, 255, 0.4);
+}
+
+/* Submit Button */
+input[type='submit'] {
+  background-color: #4c84ff;
+  color: white;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+input[type='submit']:hover {
+  background-color: #3366cc;
+  transform: translateY(-1px);
+}
+
+input[type='submit']:active {
+  transform: scale(0.98);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .login {
+    padding: 25px 20px;
+  }
+
+  .login h1 {
+    font-size: 24px;
+  }
+}

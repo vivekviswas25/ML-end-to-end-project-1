@@ -1,4 +1,9 @@
 <html>
+    <head>
+    <meta charset="UTF-8">
+    <title>Student Exam Performance Indicator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='D:\Ml end to end project 1\static\style.css') }}">
+    </head>
 <body>
     <div class="login">
        <h1>Student Exam Performance Indicator</h1>
@@ -21,7 +26,7 @@
         </div>
         <div class="mb-3">
             <label class="form-label">Race or Ethnicity</label>
-            <select class="form-control" name="ethnicity" placeholder="Enter you ethnicity" required>
+            <select class="form-control" name="ethnicity" placeholder="Enter your ethnicity" required>
                 <option class="placeholder" selected disabled value="">Select Ethnicity</option>
                 <option value="group A">
                     Group A
@@ -105,7 +110,7 @@
         </div>
     </form>
     <h2>
-       THE  prediction is {{results}}
+       THE PREDICTION IS {{results}}
     </h2>
    <body>
 </html>
